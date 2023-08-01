@@ -3,7 +3,7 @@ import org.gradle.api.JavaVersion
 object Versions {
     const val majorVersion = 0
     const val minorVersion = 18
-    const val patchVersion = 0
+    const val patchVersion = 1
 
     const val androidGradle = "7.2.2"
     const val kotlin = "1.8.0"
@@ -40,10 +40,10 @@ object Versions {
 }
 
 object GlobalConfig {
-    const val ANDROID_BUILD_SDK_VERSION = 33
+    const val ANDROID_BUILD_SDK_VERSION = 34
     const val ANDROID_BUILD_MIN_SDK_VERSION = 23
-    const val ANDROID_BUILD_TARGET_SDK_VERSION = 33
-    const val ANDROID_BUILD_TOOLS_VERSION = "33.0.0"
+    const val ANDROID_BUILD_TARGET_SDK_VERSION = 34
+    const val ANDROID_BUILD_TOOLS_VERSION = "34.0.0"
 
     const val applicationId: String = "cc.ptt.android"
     const val versionCode: Int = Versions.majorVersion * 1000000 + Versions.minorVersion * 10000 + Versions.patchVersion * 100
