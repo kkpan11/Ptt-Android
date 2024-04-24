@@ -26,8 +26,8 @@ open class Event<out T>(private val content: T) {
  * 簡化使用 [Event] 時的 [Observer] 操作行為
  */
 class EventObserver<T>(private val onEventUnhandledContent: (T) -> Unit) : Observer<Event<T>> {
-    override fun onChanged(event: Event<T>?) {
-        event?.getContentIfNotHandled()?.let {
+    override fun onChanged(value: Event<T>) {
+        value.getContentIfNotHandled()?.let {
             onEventUnhandledContent(it)
         }
     }
