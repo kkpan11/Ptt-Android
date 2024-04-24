@@ -3,7 +3,7 @@ import org.gradle.api.JavaVersion
 object Versions {
     const val majorVersion = 0
     const val minorVersion = 18
-    const val patchVersion = 1
+    const val patchVersion = 2
 
     const val androidGradle = "7.2.2"
     const val kotlin = "1.8.0"
