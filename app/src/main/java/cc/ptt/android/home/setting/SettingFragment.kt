@@ -117,8 +117,8 @@ class SettingFragment : BaseFragment() {
         }.create().run {
             window?.setBackgroundDrawableResource(R.drawable.dialog_background)
             show()
-            getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(ContextCompat.getColor(context, R.color.colorAccent))
-            getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(context, R.color.colorAccent))
+            getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(ContextCompat.getColor(context, cc.ptt.android.data.R.color.colorAccent))
+            getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(context, cc.ptt.android.data.R.color.colorAccent))
         }
     }
 
@@ -148,7 +148,7 @@ class SettingFragment : BaseFragment() {
         }.create().run {
             window?.setBackgroundDrawableResource(R.drawable.dialog_background)
             show()
-            getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(context, R.color.colorAccent))
+            getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(context, cc.ptt.android.data.R.color.colorAccent))
         }
     }
 

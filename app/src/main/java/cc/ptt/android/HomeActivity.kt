@@ -59,7 +59,7 @@ class HomeActivity : BaseActivity() {
         StaticValue.ScreenDensity = metrics.density.toDouble()
         StaticValue.widthPixels = metrics.widthPixels.toDouble()
         StaticValue.highPixels = metrics.heightPixels.toDouble()
-        StaticValue.backgroundColor = ContextCompat.getColor(this, R.color.darkGreyTwo)
+        StaticValue.backgroundColor = ContextCompat.getColor(this,cc.ptt.android.data.R.color.darkGreyTwo)
         onBackPressedDispatcher.addCallback(backPressedCallback)
         isReadyLaunch = true
     }

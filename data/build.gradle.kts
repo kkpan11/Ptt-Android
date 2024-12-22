@@ -9,7 +9,7 @@ plugins {
 
 fun getProductionHost(): String {
     return try {
-        checkStringType(gradleLocalProperties(rootDir).getProperty("PRODUCTION_HOST"))
+        checkStringType(gradleLocalProperties(rootDir, providers).getProperty("PRODUCTION_HOST"))
     } catch (e : Exception) {
         getHost()
     }
@@ -17,7 +17,7 @@ fun getProductionHost(): String {
 
 fun getStagingHost(): String {
     return try {
-        checkStringType(gradleLocalProperties(rootDir).getProperty("STAGING_HOST"))
+        checkStringType(gradleLocalProperties(rootDir, providers).getProperty("STAGING_HOST"))
     } catch (e : Exception) {
         getHost()
     }
@@ -25,7 +25,7 @@ fun getStagingHost(): String {
 
 fun getHost(): String {
     return try {
-        checkStringType(gradleLocalProperties(rootDir).getProperty("HOST"))
+        checkStringType(gradleLocalProperties(rootDir, providers).getProperty("HOST"))
     } catch (e : Exception) {
         "\"\""
     }
@@ -33,7 +33,7 @@ fun getHost(): String {
 
 fun getTestAccount(): String {
     return try {
-        checkStringType(gradleLocalProperties(rootDir).getProperty("ACCOUNT"))
+        checkStringType(gradleLocalProperties(rootDir, providers).getProperty("ACCOUNT"))
     } catch (e : Exception) {
         "\"\""
     }
@@ -41,7 +41,7 @@ fun getTestAccount(): String {
 
 fun getTestPassword(): String {
     return try {
-        checkStringType(gradleLocalProperties(rootDir).getProperty("PASSWORD"))
+        checkStringType(gradleLocalProperties(rootDir, providers).getProperty("PASSWORD"))
     } catch (e : Exception) {
         "\"\""
     }
@@ -54,6 +54,7 @@ fun checkStringType(text: String): String {
 android {
     namespace = "cc.ptt.android.data"
     compileSdk = GlobalConfig.ANDROID_BUILD_SDK_VERSION
+    buildFeatures.buildConfig = true
 
     defaultConfig {
         minSdk = GlobalConfig.ANDROID_BUILD_MIN_SDK_VERSION

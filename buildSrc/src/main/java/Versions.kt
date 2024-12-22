@@ -3,9 +3,9 @@ import org.gradle.api.JavaVersion
 object Versions {
     const val majorVersion = 0
     const val minorVersion = 18
-    const val patchVersion = 2
+    const val patchVersion = 3
 
-    const val androidGradle = "7.2.2"
+    const val androidGradle = "8.5.0"
     const val kotlin = "1.8.0"
     const val androidXAppCompat = "1.5.1"
     const val androidXArch = "2.1.0"
@@ -40,10 +40,10 @@ object Versions {
 }
 
 object GlobalConfig {
-    const val ANDROID_BUILD_SDK_VERSION = 34
+    const val ANDROID_BUILD_SDK_VERSION = 35
     const val ANDROID_BUILD_MIN_SDK_VERSION = 23
-    const val ANDROID_BUILD_TARGET_SDK_VERSION = 34
-    const val ANDROID_BUILD_TOOLS_VERSION = "34.0.0"
+    const val ANDROID_BUILD_TARGET_SDK_VERSION = 35
+    const val ANDROID_BUILD_TOOLS_VERSION = "35.0.0"
 
     const val applicationId: String = "cc.ptt.android"
     const val versionCode: Int = Versions.majorVersion * 1000000 + Versions.minorVersion * 10000 + Versions.patchVersion * 100
@@ -51,7 +51,7 @@ object GlobalConfig {
 
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-    val JDKVersion = JavaVersion.VERSION_11
+    val JDKVersion = JavaVersion.VERSION_17
 
     const val BUILD_CONFIG_KEY_FOR_API_HOST = "API_HOST"
     const val BUILD_CONFIG_KEY_FOR_TEST_ACCOUNT = "TEST_ACCOUNT"

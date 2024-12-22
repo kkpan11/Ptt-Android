@@ -25,6 +25,9 @@ android {
     compileSdk = GlobalConfig.ANDROID_BUILD_SDK_VERSION
     buildToolsVersion = GlobalConfig.ANDROID_BUILD_TOOLS_VERSION
 
+    namespace = "cc.ptt.android"
+    buildFeatures.buildConfig = true
+
     defaultConfig {
         applicationId = GlobalConfig.applicationId
         minSdk = GlobalConfig.ANDROID_BUILD_MIN_SDK_VERSION
@@ -167,3 +170,4 @@ dependencies {
 
     debugImplementation(Dependencies.Square.leakcanary)
 }
+

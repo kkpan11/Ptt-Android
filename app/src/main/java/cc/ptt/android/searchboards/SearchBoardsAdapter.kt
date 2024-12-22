@@ -52,9 +52,9 @@ class SearchBoardsAdapter(
                     ctx?.apply {
                         (data[position].like as? Boolean)?.let {
                             if (it) {
-                                like.setColorFilter(this.resources.getColor(R.color.tangerine, this.theme))
+                                like.setColorFilter(this.resources.getColor(cc.ptt.android.data.R.color.tangerine, this.theme))
                             } else {
-                                like.setColorFilter(this.resources.getColor(R.color.slateGrey, this.theme))
+                                like.setColorFilter(this.resources.getColor(cc.ptt.android.data.R.color.slateGrey, this.theme))
                             }
                         }
                     }
@@ -75,9 +75,9 @@ class SearchBoardsAdapter(
                     ctx?.apply {
                         (data[position].like as? Boolean)?.let {
                             if (it) {
-                                like.setColorFilter(this.resources.getColor(R.color.tangerine, this.theme))
+                                like.setColorFilter(this.resources.getColor(cc.ptt.android.data.R.color.tangerine, this.theme))
                             } else {
-                                like.setColorFilter(this.resources.getColor(R.color.slateGrey, this.theme))
+                                like.setColorFilter(this.resources.getColor(cc.ptt.android.data.R.color.slateGrey, this.theme))
                             }
                         }
                     }

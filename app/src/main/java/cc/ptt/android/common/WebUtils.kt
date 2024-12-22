@@ -17,7 +17,7 @@ fun turnOnUrl(context: Context, url: String?) {
     sharingIntent.putExtra(Intent.EXTRA_TEXT, url)
     val builder = CustomTabsIntent.Builder()
     builder.addDefaultShareMenuItem()
-    builder.setToolbarColor(context.resources.getColor(R.color.black))
+    builder.setToolbarColor(context.resources.getColor(cc.ptt.android.data.R.color.black))
     builder.setShowTitle(true)
     val customTabsIntent = builder.build()
     customTabsIntent.launchUrl(context, Uri.parse(url))

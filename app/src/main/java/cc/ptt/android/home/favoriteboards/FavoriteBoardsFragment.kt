@@ -78,13 +78,13 @@ class FavoriteBoardsFragment : BaseFragment() {
                         hotBoardsFragmentEdit.setColorFilter(
                             requireActivity()
                                 .resources
-                                .getColor(R.color.tangerine)
+                                .getColor(cc.ptt.android.data.R.color.tangerine)
                         )
                     } else {
                         hotBoardsFragmentEdit.setColorFilter(
                             requireActivity()
                                 .resources
-                                .getColor(R.color.slateGrey)
+                                .getColor(cc.ptt.android.data.R.color.slateGrey)
                         )
                     }
                 }

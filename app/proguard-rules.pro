@@ -106,3 +106,9 @@
 -dontwarn javax.annotation.**
 # -------------Fresco-----------------
 -keep class cc.ptt.android.data.model.remote.** { *; }
+
+-dontwarn cc.ptt.android.common.**
+-dontwarn cc.ptt.android.data.**
+-dontwarn cc.ptt.android.domain.**
+-dontwarn javax.lang.model.**
+-dontwarn javax.tools.JavaFileObject

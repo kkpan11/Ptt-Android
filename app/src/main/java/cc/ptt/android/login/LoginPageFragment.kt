@@ -113,14 +113,14 @@ class LoginPageFragment : BaseFragment(), View.OnClickListener {
     private fun loginButtonEnable(isEnable: Boolean) {
         if (isEnable) {
             binding.btnLoginPageLogin.backgroundTintList = ColorStateList.valueOf(
-                ContextCompat.getColor(requireContext(), R.color.tangerine)
+                ContextCompat.getColor(requireContext(), cc.ptt.android.data.R.color.tangerine)
             )
-            binding.btnLoginPageLogin.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+            binding.btnLoginPageLogin.setTextColor(ContextCompat.getColor(requireContext(), cc.ptt.android.data.R.color.black))
         } else {
             binding.btnLoginPageLogin.backgroundTintList = ColorStateList.valueOf(
-                ContextCompat.getColor(requireContext(), R.color.black)
+                ContextCompat.getColor(requireContext(), cc.ptt.android.data.R.color.black)
             )
-            binding.btnLoginPageLogin.setTextColor(ContextCompat.getColor(requireContext(), R.color.tangerine))
+            binding.btnLoginPageLogin.setTextColor(ContextCompat.getColor(requireContext(), cc.ptt.android.data.R.color.tangerine))
         }
         binding.btnLoginPageLogin.isEnabled = isEnable
         binding.btnLoginPageLogin.isClickable = isEnable
