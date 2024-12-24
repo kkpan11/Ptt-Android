@@ -36,7 +36,7 @@ object Versions {
     const val hilt = "2.53.1"
     const val koinCore = "4.0.0"
     const val koinAndroid = "4.0.0"
-    const val spotless = "6.12.0"
+    const val spotless = "6.22.0"
 }
 
 object GlobalConfig {
