@@ -22,6 +22,7 @@ fun gitSha(): String {
 }
 
 android {
+    namespace = GlobalConfig.applicationId
     compileSdk = GlobalConfig.ANDROID_BUILD_SDK_VERSION
     buildToolsVersion = GlobalConfig.ANDROID_BUILD_TOOLS_VERSION
 
@@ -62,7 +63,6 @@ android {
                 "proguard-rules.pro"
             )
             isShrinkResources = true
-            isZipAlignEnabled = true
             multiDexEnabled = true
         }
         getByName("debug") {
@@ -74,7 +74,6 @@ android {
                 "proguard-rules.pro"
             )
             isShrinkResources = false
-            isZipAlignEnabled = false
             multiDexEnabled = true
         }
     }
@@ -85,6 +84,7 @@ android {
     }
 
     buildFeatures {
+        resValues = true
         viewBinding = true
     }
 
@@ -97,6 +97,13 @@ android {
         create("staging") {
             isDefault = true
             dimension = "api_environment"
+        }
+    }
+
+    packaging {
+        resources {
+            merges.add("META-INF/LICENSE.md")
+            merges.add("META-INF/LICENSE-notice.md")
         }
     }
 }
@@ -141,7 +148,7 @@ dependencies {
     implementation(Dependencies.Square.okio)
     implementation(Dependencies.Square.Retrofit.core)
     implementation(Dependencies.Square.Retrofit.gsonConverter)
-    
+
     // Koin Core features
     implementation(Dependencies.Koin.Core.core)
     // Koin main features for Android

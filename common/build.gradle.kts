@@ -11,7 +11,6 @@ android {
 
     defaultConfig {
         minSdk = GlobalConfig.ANDROID_BUILD_MIN_SDK_VERSION
-        targetSdk = GlobalConfig.ANDROID_BUILD_TARGET_SDK_VERSION
 
         testInstrumentationRunner = GlobalConfig.testInstrumentationRunner
         consumerProguardFiles("consumer-rules.pro")
@@ -30,6 +29,10 @@ android {
     compileOptions {
         sourceCompatibility = GlobalConfig.JDKVersion
         targetCompatibility = GlobalConfig.JDKVersion
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 }
 

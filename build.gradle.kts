@@ -15,7 +15,7 @@ buildscript {
 
 plugins {
     id("com.diffplug.spotless") version Versions.spotless
-    id("org.jetbrains.kotlin.android") version "1.8.0" apply false
+    id("org.jetbrains.kotlin.android") version "2.1.0" apply false
 }
 
 allprojects {
@@ -32,7 +32,7 @@ subprojects {
     configure<com.diffplug.gradle.spotless.SpotlessExtension> {
         kotlin {
             target ("**/*.kt")
-            targetExclude("$buildDir/**/*.kt")
+            targetExclude("${layout.buildDirectory}/**/*.kt")
             targetExclude("bin/**/*.kt")
             trimTrailingWhitespace()
             endWithNewline()

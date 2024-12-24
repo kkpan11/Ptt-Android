@@ -41,16 +41,16 @@ object Dependencies {
         const val localBroadcastManager = "androidx.localbroadcastmanager:localbroadcastmanager:${Versions.androidXLocalBroadcastManager}"
         const val multidex = "androidx.multidex:multidex:${Versions.androidXMultidex}"
         const val swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.androidXSwipeRefreshLayout}"
-        const val coreKtx = "androidx.core:core-ktx:+"
+        const val coreKtx = "androidx.core:core-ktx:${Versions.androidXCore}"
 
         object Test {
             object Core {
-                const val core = "androidx.test:core-ktx:${Versions.androidXTextCore}"
+                const val core = "androidx.test:core-ktx:${Versions.androidXTestCore}"
             }
 
             object Ext {
-                const val junit = "androidx.test.ext:junit:${Versions.androidXTextJunit}"
-                const val espresso = "androidx.test.espresso:espresso-core:${Versions.androidXTextEspresso}"
+                const val junit = "androidx.test.ext:junit:${Versions.androidXTestJunit}"
+                const val espresso = "androidx.test.espresso:espresso-core:${Versions.androidXTestEspresso}"
             }
         }
 
