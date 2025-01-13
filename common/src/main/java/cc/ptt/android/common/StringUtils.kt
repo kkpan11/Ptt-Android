@@ -81,7 +81,7 @@ object StringUtils {
         return if (input == null) "" else {
             var uri = input.toString()
             if (uri.contains("imgur.com")) {
-                val subname = uri.toLowerCase(Locale.getDefault())
+                val subname = uri.lowercase(Locale.getDefault())
                 if (subname.contains(".jpg") ||
                     subname.contains(".png") ||
                     subname.contains(".gif") ||

@@ -3,40 +3,40 @@ import org.gradle.api.JavaVersion
 object Versions {
     const val majorVersion = 0
     const val minorVersion = 18
-    const val patchVersion = 3
+    const val patchVersion = 4
 
-    const val androidGradle = "8.5.0"
-    const val kotlin = "1.8.0"
-    const val androidXAppCompat = "1.5.1"
-    const val androidXArch = "2.1.0"
-    const val androidXBrowser = "1.4.0"
-    const val androidXConstraintLayout = "2.0.4"
+    const val androidGradle = "8.7.3"
+    const val kotlin = "1.9.20"
+    const val androidXAppCompat = "1.7.0"
+    const val androidXArch = "2.2.0"
+    const val androidXBrowser = "1.8.0"
+    const val androidXConstraintLayout = "2.2.0"
+    const val androidXCore = "1.15.0"
     const val androidXLegacy = "1.0.0"
-    const val androidXLifecycle = "2.5.1"
-    const val androidXNavigation = "2.5.3"
-    const val androidXLocalBroadcastManager = "1.0.0"
+    const val androidXLifecycle = "2.8.7"
+    const val androidXLocalBroadcastManager = "1.1.0"
     const val androidXMultidex = "2.0.1"
+    const val androidXNavigation = "2.8.5"
     const val androidXSwipeRefreshLayout = "1.1.0"
-    const val androidXTextCore = "1.5.0"
-    const val androidXTextJunit = "1.1.3"
-    const val androidXTextEspresso = "3.3.0"
-    const val jsoup = "1.13.1"
-    const val junit = "4.13"
-    const val material = "1.2.1"
-    const val mockK = "1.10.2"
-    const val okhttp = "4.9.0"
-    const val okio = "2.10.0"
-    const val retrofit = "2.9.0"
-    const val truth = "1.1"
-    const val leakcanary = "2.10"
-    const val gson = "2.8.6"
-    const val coroutines = "1.6.1"
-    const val desugar = "1.1.5"
-    const val coil = "2.2.2"
-    const val hilt = "2.44"
-    const val koinCore = "3.3.0"
-    const val koinAndroid = "3.3.1"
-    const val spotless = "6.12.0"
+    const val androidXTestCore = "1.6.1"
+    const val androidXTestEspresso = "3.6.1"
+    const val androidXTestJunit = "1.2.1"
+    const val jsoup = "1.18.3"
+    const val junit = "4.13.2"
+    const val material = "1.12.0"
+    const val mockK = "1.13.13"
+    const val okhttp = "4.12.0"
+    const val okio = "3.9.1"
+    const val retrofit = "2.11.0"
+    const val truth = "1.4.4"
+    const val leakcanary = "2.14"
+    const val gson = "2.11.0"
+    const val coroutines = "1.9.0"
+    const val coil = "2.7.0"
+    const val hilt = "2.53.1"
+    const val koinCore = "4.0.0"
+    const val koinAndroid = "4.0.0"
+    const val spotless = "6.22.0"
 }
 
 object GlobalConfig {
@@ -51,7 +51,7 @@ object GlobalConfig {
 
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-    val JDKVersion = JavaVersion.VERSION_17
+    val JDKVersion = JavaVersion.VERSION_21
 
     const val BUILD_CONFIG_KEY_FOR_API_HOST = "API_HOST"
     const val BUILD_CONFIG_KEY_FOR_TEST_ACCOUNT = "TEST_ACCOUNT"

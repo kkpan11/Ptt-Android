@@ -15,7 +15,7 @@ buildscript {
 
 plugins {
     id("com.diffplug.spotless") version Versions.spotless
-    id("org.jetbrains.kotlin.android") version "1.8.0" apply false
+    id("org.jetbrains.kotlin.android") version "2.1.0" apply false
 }
 
 allprojects {
@@ -32,16 +32,16 @@ subprojects {
     configure<com.diffplug.gradle.spotless.SpotlessExtension> {
         kotlin {
             target ("**/*.kt")
-            targetExclude("$buildDir/**/*.kt")
+            targetExclude("${layout.buildDirectory}/**/*.kt")
             targetExclude("bin/**/*.kt")
             trimTrailingWhitespace()
             endWithNewline()
             // 允許 import 路徑使用萬用字元
-            ktlint("0.39.0").userData(mapOf("disabled_rules" to "no-wildcard-imports"))
+            ktlint("1.5.0").userData(mapOf("disabled_rules" to "no-wildcard-imports"))
         }
         java {
             target ("src/*/java/**/*.java")
-            googleJavaFormat("1.7").aosp()
+            googleJavaFormat("1.21.0").aosp()
             // 移除沒用到的 Import
             removeUnusedImports()
             // 刪除多餘的空白
